@@ -1,4 +1,5 @@
-#from sys import argv
+from sys import argv
+
 import bottle
 from bottle import *
 
@@ -82,4 +83,5 @@ def villa(error):
     """
 
 #run(host="localhost", port=8020)
-run(host="0.0.0.0", port=os.environ.get("PORT"))
+
+run(host='0.0.0.0', port=argv[1])

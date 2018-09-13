@@ -1,6 +1,6 @@
-#from sys import argv
-import bottle
-from bottle import *
+from sys import argv
+#import bottle
+#from bottle import *
 
 @route("/")
 def index():
@@ -81,4 +81,5 @@ def villa(error):
         <h2 style='color:red'>Þessi síða finnst ekki </h2>
     """
 
-run(host="localhost", port=8020)
+#run(host="localhost", port=8020)
+run(host="0.0.0.0", port=os.environ.get("PORT"))
